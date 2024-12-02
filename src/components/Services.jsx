@@ -11,31 +11,26 @@ const studentSupportData = {
                     "name": "Raider Ride",
                     "phone": "(806) 742-7433",
                     "location": "Administrative Support Center, Room 145",
-                    "website": "https://www.depts.ttu.edu/parking/InformationFor/MobilitySolutions/RaiderRide.php"
                 },
                 {
                     "name": "Raider Red's Food Pantry",
                     "phone": "(806) 742-2984",
                     "location": "Doak Hall, Room 117",
-                    "website": "https://www.depts.ttu.edu/raiderrelief/foodpantry.php"
                 },
                 {
                     "name": "Student Legal Services",
                     "phone": "(806) 742-3289",
                     "location": "SUB, Room 307",
-                    "website": "https://www.depts.ttu.edu/sls/"
                 },
                 {
                     "name": "Raider Relief – Advocacy and Resource Center",
                     "phone": "(806) 742-5175",
                     "location": "Drane Hall, Room 104",
-                    "website": "https://www.depts.ttu.edu/raiderrelief/"
                 },
                 {
                     "name": "Risk Intervention & Safety Education",
                     "phone": "(806) 742-2110",
                     "location": "Drane Hall, Room 247",
-                    "website": "https://www.depts.ttu.edu/rise/"
                 }
             ]
         },
@@ -46,55 +41,46 @@ const studentSupportData = {
                     "name": "Student Health Services",
                     "phone": "(806) 743-2848",
                     "location": "Student Wellness Center, 1003 Flint Ave",
-                    "website": "https://www.depts.ttu.edu/studenthealth/"
                 },
                 {
                     "name": "Student Counseling Center",
                     "phone": "(806) 742-3674",
                     "location": "Student Wellness Center, Room 201",
-                    "website": "https://www.depts.ttu.edu/scc/"
                 },
                 {
                     "name": "Student Mental Health Community",
                     "phone": "(806) 834-4544",
                     "location": "Weeks Hall, Room 244",
-                    "website": "https://www.depts.ttu.edu/hs/student_mental_health_community/index.php"
                 },
                 {
                     "name": "Office of the Dean of Students",
                     "phone": "(806) 742-2984",
                     "location": "SUB, Room 201AA",
-                    "website": "https://www.depts.ttu.edu/dos/"
                 },
                 {
                     "name": "Student Disability Services",
                     "phone": "(806) 742-2405",
                     "location": "Weeks Hall, Room 130",
-                    "website": "https://www.depts.ttu.edu/sds/"
                 },
                 {
                     "name": "First Generation Transition & Mentoring Programs",
                     "phone": "(806) 742-7060",
                     "location": "Doak Hall, Room 119C",
-                    "website": "https://www.depts.ttu.edu/coe/undergraduate/cpceed/FYSTE.php"
                 },
                 {
                     "name": "University Recreation",
                     "phone": "(806) 742-3351",
                     "location": "3219 Main St",
-                    "website": "https://www.depts.ttu.edu/urec/"
                 },
                 {
                     "name": "Red to Black Peer Financial Coaching",
                     "phone": "(806) 742-9781",
                     "location": "Drane Hall, Room 215",
-                    "website": "https://www.depts.ttu.edu/r2b/"
                 },
                 {
                     "name": "Campus Access & Engagement",
                     "phone": "(806) 742-7025",
                     "location": "Email campusaccessandengagement@ttu.edu",
-                    "website": "https://www.depts.ttu.edu/access-engagement/"
                 }
             ]
         },
@@ -105,31 +91,26 @@ const studentSupportData = {
                     "name": "The Learning Center",
                     "phone": "(806) 742-3664",
                     "location": "Drane Hall, Room 164",
-                    "website": "https://www.depts.ttu.edu/provost/aiss/learning-center/"
                 },
                 {
                     "name": "Supplemental Instruction",
                     "phone": "(806) 742-3664",
                     "location": "Drane Hall, Room 135",
-                    "website": "https://www.depts.ttu.edu/provost/aiss/supplemental-instruction/"
                 },
                 {
                     "name": "University Writing Center",
                     "phone": "(806) 742-2476",
                     "location": "Weeks Hall, 3rd Floor",
-                    "website": "https://www.depts.ttu.edu/provost/uwc/"
                 },
                 {
                     "name": "University Career Center",
                     "phone": "(806) 742-2210",
                     "location": "Career Center, Wiggins Complex",
-                    "website": "https://www.depts.ttu.edu/careercenter/"
                 },
                 {
                     "name": "Student Business Services",
                     "phone": "(806) 742-3272",
                     "location": "West Hall, Room 301",
-                    "website": "https://www.depts.ttu.edu/studentbusinessservices/"
                 }
             ]
         }
@@ -200,7 +181,7 @@ const Services = () => {
                                 }}
                             >
                                 <Box flex={1}>
-                                    <Typography variant="h6" color="#660708">
+                                    <Typography variant="h6" >
                                         {service.name}
                                     </Typography>
                                     <Typography variant="body1" color="black">

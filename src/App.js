@@ -6,6 +6,7 @@ import DiningOptions from './components/DiningOptions'; // Import your Dining Op
 import Faq from './components/Faq'; // Import your FAQ component
 import MapWithDirections from './components/Directions';
 import Services from './components/Services';
+import BuildingInfo from './components/Buildings';
 
 console.log('Current environment:', process.env.NODE_ENV);
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/map" element={<MapWithSearch />} />
         <Route path="/directions" element={<MapWithDirections />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/buildings" element={<BuildingInfo />} />
       </Routes>
     </Router>
   );
