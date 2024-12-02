@@ -1,10 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Typography, BottomNavigation, BottomNavigationAction, Drawer, List, ListItem, ListItemText, Box, CardMedia } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import ExploreIcon from '@mui/icons-material/Explore';
-import BookIcon from '@mui/icons-material/Book';
-import SaveIcon from '@mui/icons-material/Save';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import MapIcon from "@mui/icons-material/Map";
@@ -18,24 +14,6 @@ const Layout = ({ children }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const navigate = useNavigate();
-
-    // Handle bottom navigation change
-    const handleNavChange = (event, newValue) => {
-        setNavValue(newValue);
-        switch (newValue) {
-            case 0:
-                navigate("/");
-                break;
-            case 1:
-                window.location.href = "https://www.depts.ttu.edu/housing/campus-map.pdf";
-                break;
-            case 2:
-                navigate("/resources");
-                break;
-            default:
-                break;
-        }
-    };
 
     // Handle menu toggle
     const toggleMenu = () => {
@@ -76,21 +54,6 @@ const Layout = ({ children }) => {
                 </List>
             </Drawer>
 
-            {/* App Bar */}
-            {/*<AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
-                <Toolbar>
-                    <IconButton onClick={toggleMenu}>
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
-                        <span style={{ color: 'black' }}>Tech</span>
-                        <span style={{ color: '#f31010' }}>Nav</span>
-                    </Typography>
-                    <IconButton>
-                        <NotificationsIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>*/}
             <AppBar flexDirection={'row'} display={'flex'} position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
                 <Toolbar sx={{ width: '100%', justifyContent: 'space-between', paddingX: 2 }}>
                     <IconButton onClick={toggleMenu}>
@@ -123,44 +86,6 @@ const Layout = ({ children }) => {
             <Box sx={{ flexGrow: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', width: '100vw' }}>
                 {children}
             </Box>
-
-            {/* Bottom Navigation 
-            <BottomNavigation
-                value={navValue}
-                onChange={handleNavChange}
-                showLabels
-                sx={{
-                    backgroundColor: 'white',
-                    width: '100vw',
-                    position: 'fixed',  // Fixed positioning
-                    bottom: 0,  // Stick to the bottom
-                    left: 0,    // Ensure full width
-                    right: 0
-                }}
-            >
-                <BottomNavigationAction
-                    label="Explore"
-                    icon={<ExploreIcon />}
-                    sx={{
-                        color: navValue === 0 ? '#fed8d8' : '#1d1b20',
-                    }}
-                />
-                <BottomNavigationAction
-                    label="Buildings"
-                    icon={<SaveIcon />}
-                    sx={{
-                        color: navValue === 1 ? '#fed8d8' : '#49454f',
-                    }}
-                />
-                <BottomNavigationAction
-                    label="Resources"
-                    icon={<BookIcon />}
-                    sx={{
-                        color: navValue === 2 ? '#fed8d8' : '#49454f',
-                    }}
-                />
-            </BottomNavigation>
-            */}
         </Box>
     );
 };
