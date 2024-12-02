@@ -33,9 +33,6 @@ const Layout = ({ children }) => {
                     {/*<ListItem button onClick={() => navigate("/map")}>
                         <ListItemText primary="Map" />
                     </ListItem>*/}
-                    <ListItem button onClick={() => navigate("/services")}>
-                        <ListItemText primary="Services" />
-                    </ListItem>
                     <ListItem button onClick={() => navigate("/buildings")}>
                         <ListItemText primary="Buildings" />
                     </ListItem>
