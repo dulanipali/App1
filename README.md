@@ -12,7 +12,7 @@ This is main designed for a mobile phone and a seperate web version is being des
 ## Step 1: Clone the repository
 
 ```
-git clone https://github.com/dulanipali/RaiderNav.git
+git clone https://github.com/dulanipali/App1.git
 ```
 
 ## Step 2: Install Dependencies
