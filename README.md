@@ -1,5 +1,8 @@
-# Getting Started with RaiderNav app
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RaiderNav
+A campus navigation app for TTU. Main features include: Directions, Information on Campus Services, View Building information, Dining Hall/Bus Stop Information
+ 
+
+## Getting Started with RaiderNav app
 
 This is version 1 of the Texas Tech University campus navigation app made for CS3366 project 2.
 
@@ -29,7 +32,6 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Step 3: View the Deployed Project
+## View the Deployed Project
 
-
-The page will reload when you make changes.\
+(https://dulanipali.github.io/App1/)
